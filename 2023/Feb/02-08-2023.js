@@ -15,8 +15,8 @@ function longest(str1, str2) {
   if (typeof str1 === "string" && typeof str2 === "string") {
     const input = (Array.from(str1).concat(Array.from(str2))).sort()
     const newArrayWithNoDuplicates = input.reduce((accumulator, currentValue) => {
-    if (!accumulator.includes(currentValue)) {
-      return [...accumulator, currentValue];
+      if (!accumulator.includes(currentValue)) {
+        return [...accumulator, currentValue];
       }
       return accumulator;
     }, []);
