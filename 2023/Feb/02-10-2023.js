@@ -1,13 +1,16 @@
-// Challenge 01
+/** 
+ * ! ###-Challenge 01-### 
+ * */
 
-/* Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
-
-It should remove all values from list a, which are present in list b keeping their order. */
+/**
+ * !Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+ * !It should remove all values from list a, which are present in list b keeping their order. 
+ * */
 
 function arrayDiff(a, b) {
   const result = [];
 
-  if (a.lenght === 0) {
+  if (a.length === 0) {
     return b;
   }
 
